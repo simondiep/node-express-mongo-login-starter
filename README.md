@@ -18,6 +18,8 @@ Install [Node.js](http://nodejs.org)
 
 `node app`
 
+Open your web browser to `localhost:3000`
+
 Additional Tips
 ---------------
 
@@ -27,13 +29,15 @@ When developing, I highly recommend [nodemon](https://github.com/remy/nodemon). 
 For static code analysis, I recommend [jshint](https://www.npmjs.com/package/jshint).  It catches a lot of issues that are easily glossed over.
 `npm install -g jshint`
 
+To Run jshint inside your project
+`jshint .`
+
 npm scripts have been set up to run the app as well as tests, inside package.json
 
 `npm start`
 
 `npm test`
 
-`npm lint`
 
 What happens behind the scenes with MongoDB
 --------------------------------------------

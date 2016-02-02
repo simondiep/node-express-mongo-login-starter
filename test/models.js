@@ -1,3 +1,4 @@
+'use strict';
 var chai = require('chai');
 var should = chai.should();
 var User = require('../models/User');
