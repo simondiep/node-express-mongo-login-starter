@@ -11,7 +11,7 @@ var flash = require('express-flash');
 var app = express();
 
 // Local configuration
-var MONGODB_URL = "mongodb://localhost:27017/test";
+var MONGODB_URL = process.env.MONGODB_URI || "mongodb://localhost:27017/test";
 var EXPRESS_PORT = process.env.PORT || 3000;
 
 // Mongo connection
