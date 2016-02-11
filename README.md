@@ -3,7 +3,8 @@ Node-Express-Mongo-Login-Starter
 [![Build Status](https://travis-ci.org/simondiep/node-express-mongo-login-starter.svg?branch=master)](https://travis-ci.org/simondiep/node-express-mongo-login-starter)
 [![Dependency Status](https://david-dm.org/simondiep/node-express-mongo-login-starter/status.svg?style=flat)](https://david-dm.org/simondiep/node-express-mongo-login-starter)  
 
-A starter log-in application for **Node.js** using **Express** web framework and **MongoDB**.
+A starter log-in application for **Node.js** using **Express** web framework and **MongoDB**.  
+Live Demo [Here](https://node-express-login-starter.herokuapp.com/)
 
 Getting Started
 ---------------
