@@ -1,5 +1,7 @@
 Node-Express-Mongo-Login-Starter
 ------------------------
+[![Build Status](https://travis-ci.org/simondiep/node-express-mongo-login-starter.svg?branch=master)](https://travis-ci.org/simondiep/node-express-mongo-login-starter)
+[![Dependency Status](https://david-dm.org/simondiep/node-express-mongo-login-starter/status.svg?style=flat)](https://david-dm.org/simondiep/node-express-mongo-login-starter)  
 
 A starter log-in application for **Node.js** using **Express** web framework and **MongoDB**.
 
@@ -26,17 +28,11 @@ Additional Tips
 When developing, I highly recommend [nodemon](https://github.com/remy/nodemon).  It monitors a running app and restarts the app if any files have changed.  This has saved me a lot of time from manually restarting Node to see a new change.
 `npm install -g nodemon`
 
-For static code analysis, I recommend [jshint](https://www.npmjs.com/package/jshint).  It catches a lot of issues that are easily glossed over.
-`npm install -g jshint`
-
-To Run jshint inside your project
-`jshint .`
-
 npm scripts have been set up to run the app as well as tests, inside package.json
 
-`npm start`
+To start the app: `npm start`
 
-`npm test`
+To run tests: `npm test`
 
 
 What happens behind the scenes with MongoDB

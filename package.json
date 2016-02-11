@@ -7,8 +7,8 @@
   },
   "scripts": {
     "start": "node app.js",
-    "test": "mocha --reporter spec --timeout 1000",
-    "lint": "jshint ."
+    "pretest": "jshint .",
+    "test": "mocha --reporter spec --timeout 1000"
   },
   "dependencies": {
     "bcrypt-nodejs": "^0.0.3",
@@ -25,6 +25,7 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
+    "jshint": "^2.9.1",
     "mocha": "^2.4.5",
     "supertest": "^1.1.0"
   }
