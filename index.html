@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Node-express-mongo-login-starter by simondiep</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Node-express-mongo-login-starter</h1>
+      <h2 class="project-tagline">A starter log-in application for Node.js using Express web framework and MongoDB.</h2>
+      <a href="https://github.com/simondiep/node-express-mongo-login-starter" class="btn">View on GitHub</a>
+      <a href="https://github.com/simondiep/node-express-mongo-login-starter/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/simondiep/node-express-mongo-login-starter/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h2>
+<a id="node-express-mongo-login-starter" class="anchor" href="#node-express-mongo-login-starter" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Node-Express-Mongo-Login-Starter</h2>
+
+<p><a href="https://travis-ci.org/simondiep/node-express-mongo-login-starter"><img src="https://travis-ci.org/simondiep/node-express-mongo-login-starter.svg?branch=master" alt="Build Status"></a>
+<a href="https://david-dm.org/simondiep/node-express-mongo-login-starter"><img src="https://david-dm.org/simondiep/node-express-mongo-login-starter/status.svg?style=flat" alt="Dependency Status"></a>  </p>
+
+<p>A starter log-in application for <strong>Node.js</strong> using <strong>Express</strong> web framework and <strong>MongoDB</strong>.</p>
+
+<h2>
+<a id="getting-started" class="anchor" href="#getting-started" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Getting Started</h2>
+
+<p>Install <a href="https://www.mongodb.org/downloads">MongoDB</a></p>
+
+<p>Install <a href="http://nodejs.org">Node.js</a></p>
+
+<p><code>git clone https://github.com/simondiep/node-express-mongo-login-starter.git</code></p>
+
+<p><code>cd node-express-mongo-login-starter</code></p>
+
+<p><code>npm install</code></p>
+
+<p><code>node app</code></p>
+
+<p>Open your web browser to <code>localhost:3000</code></p>
+
+<h2>
+<a id="additional-tips" class="anchor" href="#additional-tips" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Additional Tips</h2>
+
+<p>When developing, I highly recommend <a href="https://github.com/remy/nodemon">nodemon</a>.  It monitors a running app and restarts the app if any files have changed.  This has saved me a lot of time from manually restarting Node to see a new change.
+<code>npm install -g nodemon</code></p>
+
+<p>npm scripts have been set up to run the app as well as tests, inside package.json</p>
+
+<p>To start the app: <code>npm start</code></p>
+
+<p>To run tests: <code>npm test</code></p>
+
+<h2>
+<a id="what-happens-behind-the-scenes-with-mongodb" class="anchor" href="#what-happens-behind-the-scenes-with-mongodb" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>What happens behind the scenes with MongoDB</h2>
+
+<p>When a user visits the site, a new <strong>session</strong> document is <strong>created</strong> in MongoDB, with the passport field empty.</p>
+
+<p>When the user creates a new account, a new <strong>user</strong> document is <strong>created</strong> in MongoDB.</p>
+
+<p>When the user logs into the site, the existing <strong>session</strong> is <strong>updated</strong> by adding the user's ID into the session document.  The passport field is used.</p>
+
+<p>When the user logs out of the site, the user's ID is <strong>removed</strong> from the <strong>session</strong> document's passport field.</p>
+
+<h2>
+<a id="why-each-npm-package-is-included" class="anchor" href="#why-each-npm-package-is-included" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Why each NPM Package is included</h2>
+
+<table>
+<thead>
+<tr>
+<th>Express Package</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>body-parser</td>
+<td>Simplifies incoming request data</td>
+</tr>
+<tr>
+<td>express</td>
+<td>Node.js web framework</td>
+</tr>
+<tr>
+<td>express-flash</td>
+<td>Notification messages</td>
+</tr>
+<tr>
+<td>express-session</td>
+<td>Session Management</td>
+</tr>
+<tr>
+<td>express-validator</td>
+<td>Simple form validation</td>
+</tr>
+<tr>
+<td>morgan</td>
+<td>HTTP Request logging</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th>General Package</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bcrypt-nodejs</td>
+<td>Password hashing and salting</td>
+</tr>
+<tr>
+<td>jade</td>
+<td>HTML template engine</td>
+</tr>
+<tr>
+<td>mongoose</td>
+<td>MongoDB object modeling</td>
+</tr>
+<tr>
+<td>passport</td>
+<td>Simple authentication library</td>
+</tr>
+<tr>
+<td>passport-local</td>
+<td>Username/Password sign-in plugin for passport</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th>Testing Package</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>chai</td>
+<td>Assertion library used by Mocha</td>
+</tr>
+<tr>
+<td>mocha</td>
+<td>Test framework</td>
+</tr>
+<tr>
+<td>supertest</td>
+<td>HTTP assertion library</td>
+</tr>
+</tbody>
+</table>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/simondiep/node-express-mongo-login-starter">Node-express-mongo-login-starter</a> is maintained by <a href="https://github.com/simondiep">simondiep</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
