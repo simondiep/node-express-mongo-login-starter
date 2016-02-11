@@ -12,7 +12,7 @@ var app = express();
 
 // Local configuration
 var MONGODB_URL = "mongodb://localhost:27017/test";
-var EXPRESS_PORT = 3000;
+var EXPRESS_PORT = process.env.PORT || 3000;
 
 // Mongo connection
 mongoose.connect(MONGODB_URL);
